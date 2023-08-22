@@ -42,7 +42,7 @@ public class TestBase
          
 		String URL = "https://oyn-adminportal-qc-demo.salmonsky-\r\n"
 				+ "1edff179.westeurope.azurecontainerapps.io";
-		driver.navigate().to(URL);
+		driver.get(URL);
 		driver.manage().window().maximize();
 	}
 

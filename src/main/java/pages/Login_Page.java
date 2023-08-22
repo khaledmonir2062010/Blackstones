@@ -21,6 +21,11 @@ public class Login_Page extends PageBase {
 	@FindBy(css =".block")
 	WebElement Signin_btn;
 	
+	
+	//
+	@FindBy(css=".info > p")
+	public WebElement successLogoutMsg;
+	
 	//Login Function//
 	public void SiginProcess(String Email, String Pass)
 	{
