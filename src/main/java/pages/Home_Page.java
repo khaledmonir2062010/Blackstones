@@ -11,19 +11,29 @@ public class Home_Page extends PageBase {
 		// TODO Auto-generated constructor stub
 	}
 	
+	//Element For Dash board Header//
+	@FindBy(css=".breadcrumb > p")
+	public WebElement DashboardHeader;
+	
+	//Element For The profile Icon//
 	@FindBy(css = ".user > img")
 	WebElement Profile_icon;
 
-	
+	//Element For the logout link//
 	@FindBy(css = ".dropdown > li:nth-child(3)")
 	WebElement Logout_link;
 	
+	
+	
+	//Method for clicking on the profile menu//
 	public void OpenProfilemenu()
 	{
 		
 		click_button(Profile_icon);
 	}
 	
+	
+	//Method for logging out/	
 	public void Logout()
 	{
 		
